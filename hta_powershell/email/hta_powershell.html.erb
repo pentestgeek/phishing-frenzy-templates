@@ -1,0 +1,80 @@
+<!-- created by antisnatchor, 1th July 2014
+-- NOTE: change "https://change_me_with_the_phishing_domain.com" with your phishing domain
+-->
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=3Dutf-8">
+</head>
+<body style="word-wrap: break-word; -webkit-nbsp-mode: space;color: rgb(0, 0, 0); font-size: 14px; font-family:Calibri, sans-serif; ">
+<div>
+  <div style="word-wrap: break-word; -webkit-nbsp-mode: space; color: rgb(0, 0, 0); font-size: 14px; font-family: Calibri, sans-serif; ">
+    <div>
+      <div dir="ltr" style="font-family: Calibri; font-size: medium; ">
+        Hi <%= @target.firstname %>,
+        <br><br>
+      </div>
+      <div dir="ltr" style="font-family: Calibri; font-size: medium; ">As you may already be aware, we are in the process of changing some underlying technology used in our corporate website, in order to more effectively support users browsing via Microsoft's Internet Explorer.
+      </div>
+    </div>
+  </div>
+</div>
+<div><br>
+</div>
+<div>
+  <div style="word-wrap: break-word; -webkit-nbsp-mode: space; color: rgb(0, 0, 0); font-size: 14px; font-family: Calibri, sans-serif; ">
+    <div>
+      <div dir="ltr" style="font-family: Calibri; font-size: medium; ">The new platform involves the usage of a custom HTML Application for performance reasons.</div>
+      <div dir="ltr" style="font-family: Calibri; font-size: medium; "><br>
+      </div>
+      <div dir="ltr" style="font-family: Calibri; font-size: medium; ">You have been shortlisted to participate in the test group, so please take a moment to help field test the new functionality by browsing with Internet Explorer to our staging website (<a href="http://<%= @url %>">https://change_me_with_the_phishing_domain.com</a>).</div>
+    </div>
+  </div>
+</div>
+<div><br>
+</div>
+<div style="font-family: Calibri; font-size: medium;" ><b>IMPORTANT:</b> Do not use any other browser during this test, or your feedback will be invalid.</div>
+<div><br>
+</div>
+<div><span style="font-family: Calibri; font-size: medium; ">Depending on your Internet Explorer settings, you may be prompted to &quot;Allow&quot; the execution of the HTML Application.</span></div>
+<div><span style="font-family: Calibri; font-size: medium; ">If a prompt does appear, follow the steps below:</span></div>
+<div style="word-wrap: break-word; -webkit-nbsp-mode: space; color: rgb(0, 0, 0); font-size: 14px; font-family: Calibri, sans-serif; ">
+  <div>
+    <div dir="ltr" style="font-family: Calibri; font-size: medium; "><br>
+    </div>
+    <ul>
+      <li><b>Open the HTML Application:</b></li></ul>
+    <div><%= image_tag attachments['open_hta.png'].url %></div>
+    <ul>
+      <li><b>Allow execution from our trusted domain:</b></li></ul>
+    <div dir="ltr" style="font-family: Calibri; font-size: medium; ">
+      <%= image_tag attachments['allow_hta.png'].url %>
+    </div>
+    <div dir="ltr" style="font-family: Calibri; font-size: medium; "><br>
+    </div>
+  </div>
+</div>
+<div><br>
+</div>
+<div style="font-family: Calibri; font-size: medium; ">The application is designed to function without generating further prompts or errors. However, we are interested in receiving all bug reports or general observations regarding its usability.</div>
+<div><br>
+</div>
+<div style="word-wrap: break-word; -webkit-nbsp-mode: space; color: rgb(0, 0, 0); font-size: 14px; font-family: Calibri, sans-serif; ">
+  <div>
+    <div dir="ltr" style="font-family: Calibri; font-size: medium; ">Your feedback is important to us, please email us directly once you have performed the test.</div>
+    <div dir="ltr" style="font-family: Calibri; font-size: medium; "><br>
+    </div>
+    <div dir="ltr" style="font-family: Calibri; font-size: medium; ">Regards,</div>
+    <div dir="ltr" style="font-family: Calibri; font-size: medium; ">IT Support</div>
+    <div dir="ltr" style="font-family: Calibri; font-size: medium; ">--&nbsp;<br>
+<pre>IMPORTANT NOTICE This email (including any attachments) is meant only for the intended recipient. It may also contain confidential and privileged information. If you are not the intended recipient, any reliance on, use, publication, disclosure, distribution or copying of this email or attachments is strictly prohibited. Please notify the sender immediately by email if you have received this message by mistake and delete the email and all attachments.
+</pre>
+  </div>
+  <div><br>
+  </div>
+  <div>
+    <p></p>
+  </div>
+</div></div>
+<img src="<%= @image_url %>" alt="" />
+</body>
+</html>
