@@ -19,6 +19,7 @@ When you submit a PR for a new template please follow the established structure 
 
 Folder structure
 
+<pre>
 root
 |--archive
 |   |-- templateName.zip
@@ -33,6 +34,7 @@ root
 |--www
 |   |-- index.php
 |   |-- failed.php
+</pre>
 
 The archive folder will contain the zipped archive that was exported from the Phishing Frenzy UI.
 
