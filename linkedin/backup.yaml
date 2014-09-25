@@ -1,0 +1,10 @@
+--- !ruby/object:Template 
+attributes: 
+  id: 4
+  campaign_id: 
+  name: Linkedin Phishing
+  description: "Creates a fake 'XYZ wants to connect with you on Linkedin' email. Every link in the email goes to your phishing website, which is the Linkedin Login page. Credentials are stored and the victim is then redirected to a predefined URL on the real Linkedin."
+  location: linkedin
+  notes: created by antisnatchor
+  created_at: 2014-09-10 17:58:45 Z
+  updated_at: 2014-09-10 17:58:45 Z
