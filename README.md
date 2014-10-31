@@ -34,6 +34,8 @@ root
 |--www
 |   |-- index.php
 |   |-- failed.php
+|
+|--README.txt
 </pre>
 
 The archive folder will contain the zipped archive that was exported from the Phishing Frenzy UI.
