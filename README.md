@@ -5,6 +5,8 @@ Email Phishing Scenarios Used for Phishing Frenzy.
 
 To share your Phishing Template with the community please submit a Pull Request to this Repository.
 
+Template Gallery can be found [here](www.phishingfrenzy.com/templates/index)
+
 Import Phishing Scenarios
 -------------------------
 
