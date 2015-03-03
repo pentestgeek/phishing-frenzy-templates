@@ -1,0 +1,81 @@
+<!-- created by @antisnatchor - 1st July 2014 
+-- make sure you change the following placeholders in this file and also in login_submit.php:
+  __target_real_owa__      <-- example: owa.target.com
+  __target_company_name__  <-- example: Target
+  __target_company_addr1__ <-- example: Street of Perdition 666
+  __target_company_addr2__ <-- example: Nevada, USA
+
+-->
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w"urn:schemas-microsoft-com:office:wo=
+rd" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv=Content-Type content="text/html; charset=us-ascii"><meta name=Generator content="Microsoft Word 15 (filtered medium)"><style>
+@font-face {font-family:"Cambria Math";
+panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face {font-family:Calibri;
+panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+{margin:0in;
+margin-bottom:.0001pt;
+font-size:12.0pt;
+font-family:"Times New Roman",serif;}
+a:link, span.MsoHyperlink
+{mso-style-priority:99;
+color:#0563C1;
+text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+{mso-style-priority:99;
+color:#954F72;
+text-decoration:underline;}
+p
+{mso-style-priority:99;
+mso-margin-top-alt:auto;
+margin-right:0in;
+mso-margin-bottom-alt:auto;
+margin-left:0in;
+font-size:12.0pt;
+font-family:"Times New Roman",serif;}
+span.EmailStyle18
+{mso-style-type:personal;
+font-family:"Calibri",sans-serif;
+color:#1F497D;}
+span.EmailStyle19
+{mso-style-type:personal-compose;
+font-family:"Calibri",sans-serif;
+color:windowtext;}
+.MsoChpDefault
+{mso-style-type:export-only;
+font-size:10.0pt;}
+@page WordSection1
+{size:8.5in 11.0in;
+margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+{page:WordSection1;}</style></head>
+<body lang=EN-US link="#0563C1" vlink="#954F72">
+	<div class=WordSection>
+		<p class=MsoNormal>
+<span style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:#1F497D'>
+	Hi <%= @target.firstname %>,
+<br><br>
+We've encountered quality of service issues with our corporate webmail system. <br>
+We had a short outage last week, which caused some email aliases and mails to be forwarded inappropriately.<br>
+<br>
+The issue seems to have been resolved successfully, and we are beginning to identify and remove misdirected data.
+<br><br>
+Please help us by confirming whether any abnormalities are present in your web-based inbox by logging in here:<br>
+<a href="<%= @url %>">https://__target_real_owa__</a>
+<br><br>
+This is a mandatory check, as we require everybody's assistance to help identify and remove misdirected mail.
+<br><br>
+Please reply to this email if you notice any abnormalities. If your webmail inbox appears normal, there is no need to reply.
+<br>
+Please complete this check by close of business on Tuesday.
+<br><br>
+Thanks
+<o:p></o:p></span>
+<br/>
+<p class="MsoNormal">
+<span style="font-size: 10pt; font-family: Arial, sans-serif; color: rgb(31, 73, 125);">IT Helpdesk</span><br/>
+<span style="font-size: 10pt; font-family: Arial, sans-serif; color: rgb(31, 73, 125);">__target_company_name__</span><br/>
+<span style="font-size: 10pt; font-family: Arial, sans-serif; color: rgb(31, 73, 125);">__target_company_addr1__</span><br/>
+<span style="font-size: 10pt; font-family: Arial, sans-serif; color: rgb(31, 73, 125);">__target_company_addr2__</span><br/>
+</div></body></html>
